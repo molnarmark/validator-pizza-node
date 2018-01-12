@@ -1,0 +1,29 @@
+{
+  "name": "validator-pizza-node",
+  "version": "1.0.2",
+  "description": "A http://validator.pizza client for Node.",
+  "main": "dist/index.js",
+  "scripts": {
+		"start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "validator",
+    "disposable",
+    "disposable email",
+    "email",
+    "valid email",
+    "valid",
+    "validator.pizza"
+  ],
+  "author": "Mark Molnar <molnarpw@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/molnarmark/validator-pizza-node",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/molnarmark/validator-pizza-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/molnarmark/validator-pizza-node/issues"
+  }
+}
