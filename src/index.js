@@ -19,10 +19,3 @@ function ValidatorPizzaClient() {
     });
   }
 }
-
-const client = new ValidatorPizzaClient();
-client.validate("domain", "yopmail.com")
-  .then(response => {
-    console.log(response.valid());
-    console.log(response.successful());
-  });
