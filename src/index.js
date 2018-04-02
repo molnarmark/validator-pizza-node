@@ -19,3 +19,5 @@ function ValidatorPizzaClient() {
     });
   }
 }
+
+module.exports.ValidatorPizzaClient = ValidatorPizzaClient;
