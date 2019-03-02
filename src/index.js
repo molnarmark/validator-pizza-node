@@ -10,7 +10,7 @@ function ValidatorPizzaResponse(data) {
 function ValidatorPizzaClient() {
   this.validate = (validationType, validationData, apiKey) => {
     if(apiKey){
-      const endpoint = `https://www.validator.pizza/${validationType}/${validationData}?key={apiKey}`;
+      const endpoint = `https://www.validator.pizza/${validationType}/${validationData}?key=${apiKey}`;
     }else{
       const endpoint = `https://www.validator.pizza/${validationType}/${validationData}`;
     let response = "";
