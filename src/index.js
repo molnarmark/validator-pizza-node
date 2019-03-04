@@ -8,8 +8,11 @@ function ValidatorPizzaResponse(data) {
 }
 
 function ValidatorPizzaClient() {
-  this.validate = (validationType, validationData) => {
-    const endpoint = `https://www.validator.pizza/${validationType}/${validationData}`;
+  this.validate = (validationType, validationData, apiKey) => {
+    if(apiKey){
+      const endpoint = `https://www.validator.pizza/${validationType}/${validationData}?key=${apiKey}`;
+    }else{
+      const endpoint = `https://www.validator.pizza/${validationType}/${validationData}`;
     let response = "";
     return new Promise((resolve, reject) => {
       https.get(endpoint, res => {
