@@ -10,9 +10,9 @@ function ValidatorPizzaResponse(data) {
 function ValidatorPizzaClient() {
   this.validate = (validationType, validationData, apiKey) => {
     if(apiKey){
-      const endpoint = `https://www.validator.pizza/${validationType}/${validationData}?key=${apiKey}`;
+      const endpoint = `https://api.mailcheck.ai/${validationType}/${validationData}?key=${apiKey}`;
     }else{
-      const endpoint = `https://www.validator.pizza/${validationType}/${validationData}`;
+      const endpoint = `https://api.mailcheck.ai/${validationType}/${validationData}`;
     let response = "";
     return new Promise((resolve, reject) => {
       https.get(endpoint, res => {
